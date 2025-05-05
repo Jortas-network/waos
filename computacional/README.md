@@ -79,10 +79,9 @@ python main.py
 
 ## 🧑‍💻 Autor
 
-Desarrollado por \[Tu Nombre].
-
+Desarrollado por Jorgito tu terror
 ```
-
+Carreenme en las EU pofa
 ---
 
 ¿Te gustaría que ahora te dé el código de `main.py` completo que conecte con los módulos de filtro y permita seleccionar la imagen y el tipo de filtro?
