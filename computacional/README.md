@@ -1,4 +1,3 @@
-Claro, aquí tienes un `README.md` sencillo y claro para tu proyecto de **filtros de imágenes** en Python:
 
 ---
 
@@ -82,8 +81,9 @@ python main.py
 Desarrollado por Jorgito tu terror
 ```
 Carreenme en las EU pofa
+
+Mas preguntas al 987654321 sapaso
+
 ---
 
-¿Te gustaría que ahora te dé el código de `main.py` completo que conecte con los módulos de filtro y permita seleccionar la imagen y el tipo de filtro?
-```
 
