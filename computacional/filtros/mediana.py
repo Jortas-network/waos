@@ -1,5 +1,5 @@
 import cv2
 
-def apply(image, ksize=3):
+def aplicar(image):
     """Aplica filtro de mediana"""
-    return cv2.medianBlur(image, ksize)
+    return cv2.medianBlur(image, 3)
