@@ -1,3 +1,3 @@
 # WA 
 MateComputacionalFiltros
-En el README dentro de computacional estan las instrucciones papi
+En el README dentro de computacional estan las instrucciones 
