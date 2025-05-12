@@ -74,16 +74,5 @@ python main.py
 * Si la imagen de entrada es a color, se convierte automáticamente.
 * El código está modularizado para facilitar pruebas y mantenimiento.
 
----
 
-## 🧑‍💻 Autor
-
-Desarrollado por Jorgito tu terror
-```
-Carreenme en las EU pofa
-
-Mas preguntas al 987654321 sapaso
-
----
-
-
+----
