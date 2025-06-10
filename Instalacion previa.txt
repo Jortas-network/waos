@@ -1,0 +1,17 @@
+Instalacion previa:
+
+Para que el programa funcione optimamente sin busg deberia instalar las siguientes librerias y/o dependecias:
+
+OpenCV-PYTHON 
+
+numpy
+
+matplotlib
+
+Para instalar las mencionadas librerias, pegue este commando en powershell(admin) o cmd(admin):
+
+==========================================
+
+pip install opencv-python numpy matplotlib 
+
+===========================================
