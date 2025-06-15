@@ -1,30 +1,18 @@
 import cv2
+import numpy as np
 
 def cargar_imagen(ruta):
+    #Carga la imagen y la retorna
     imagen = cv2.imread(ruta)
-    if imagen is None:
-        raise FileNotFoundError(f"No se pudo cargar la imagen: {ruta}")
     return imagen
 
-def cargar_imagen_gris(ruta):
-    imagen = cv2.imread(ruta,cv2.IMREAD_GRAYSCALE)
-    if imagen is None:
-        raise FileNotFoundError(f"No se pudo cargar la imagen: {ruta}")
-    return imagen
-
-def resize_image(imagen, width=None, height=None):
-    if width is not None:
-        r = width / imagen.shape[1]
-        dim = (width, int(imagen.shape[0] * r))
-    elif height is not None:
-        r = height / imagen.shape[0]
-        dim = (int(imagen.shape[1] * r), height)
-    else:
-        return imagen
-    return cv2.resize(imagen, dim)
-
-def mostrar_imagen(imagen,texto):
-    cv2.imshow(texto, imagen)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    return None
+def cargar_imagen_gris(imagen_original):
+    #Separamos los 3 canales de colores: azul verde y rojo (blue green red)
+    azul=imagen_original[:,:,0]
+    verde=imagen_original[:,:,1]
+    rojo=imagen_original[:,:,2]
+    #Aplicamos la formula NTSC para convertir a escala de grises en 8 bits
+    imagen_gris=0.114*azul+0.587*verde+0.299*rojo
+    #Se convierte a enteros de 8 bits
+    imagen_gris=np.array(imagen_gris).astype(np.uint8)
+    return imagen_gris
