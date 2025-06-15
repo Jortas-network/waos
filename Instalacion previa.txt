@@ -8,10 +8,12 @@ numpy
 
 matplotlib
 
+tkinter (Viene preinstalado en python de windows)
+
 Para instalar las mencionadas librerias, pegue este commando en powershell(admin) o cmd(admin):
 
 ==========================================
 
-pip install opencv-python numpy matplotlib 
+pip install opencv-python numpy matplotlib
 
 ===========================================
